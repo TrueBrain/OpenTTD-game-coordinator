@@ -8,7 +8,7 @@ charset-normalizer==2.0.7
 click==8.0.3
 honeycomb-beeline==2.17.1
 idna==3.3
-libhoney==1.11.1
+libhoney==2.2.0
 multidict==5.2.0
 openttd-helpers==1.0.1
 openttd-protocol==1.4.1
