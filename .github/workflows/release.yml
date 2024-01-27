@@ -3,13 +3,14 @@ name: Release
 on:
   push:
     branches:
-    - main
+    - truebrain-test
 
 jobs:
   release:
     name: Release
-    uses: OpenTTD/actions/.github/workflows/rw-entry-release-docker-nomad.yml@v5
-    secrets: inherit
+    uses: OpenTTD/actions/.github/workflows/rw-entry-release-docker-nomad.yml@truebrain-test
+    secrets:
+      NOMAD_SERVICE_PROD_KEY: bla
     with:
       service: game-coordinator-prod
       url: https://coordinator.openttd.org/
